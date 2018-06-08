@@ -1,1 +1,0 @@
-# Wrike Tableau Data Connector
