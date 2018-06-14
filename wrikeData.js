@@ -78,20 +78,21 @@
 
             console.log(response.data)
 
-            var feat = response.data,
+            var PROJ = response.data,
                 tableData = [];
 
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
+                
                 tableData.push({
-                    "id": feat[i].id,
-                    "accountId": feat[i].accountId,
-                    "title": feat[i].title,
-                    "startDate": feat[i].project.startDate,
-                    "endDate": feat[i].project.endDate,
-                    "status": feat[i].project.status,
-                    "ownerIds": feat[i].project.ownerIds[0],
-                    "permalink": feat[i].permalink
+                    "id": PROJ[i].id,
+                    "accountId": PROJ[i].accountId,
+                    "title": PROJ[i].title,
+                    "startDate": PROJ[i].project.startDate,
+                    "endDate": PROJ[i].project.endDate,
+                    "status": PROJ[i].project.status,
+                    "ownerIds": PROJ[i].project.ownerIds[0],
+                    "permalink": PROJ[i].permalink
 
 
                 });
